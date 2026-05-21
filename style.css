@@ -1,0 +1,117 @@
+/* Färgvariabler och tema */
+:root{
+    /* Gradientstart- och slutfärg för bakgrunden */
+    --bg-start: #eaf3ff;
+    --bg-end: #ffffff;
+    /* Bakgrund för kort (header/main/footer) */
+    --card-bg: #ffffff;
+    /* Huvudaccentfärg (knappar/länkar) */
+    --accent: #0b6fd6;
+    /* Mörkare accent för hover/kontrast */
+    --accent-dark: #064a9a;
+    /* Dämpad textfärg för brödtext */
+    --muted: #566271;
+}
+
+/* Box sizing för enklare layoutberäkningar */
+*{box-sizing:border-box}
+
+html,body{
+    height:100%; /* gör att flex-centrering fungerar fullt ut */
+    margin:0; /* tar bort standardmarginaler */
+    font-family: "Segoe UI", Roboto, Arial, sans-serif; /* läsbar sans-serif */
+    /* mjuk diagonal bakgrundsgradient */
+    background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    color:#172021; /* standardtextfärg */
+}
+
+/* Centrera allt innehåll horisontellt och vertikalt */
+body{
+    display:flex; /* gör body till flexcontainer */
+    align-items:center; /* vertikal centrering */
+    justify-content:center; /* horisontell centrering */
+    text-align:center; /* centrerar texten i element som inte själva definierar layout */
+    padding:2rem; /* inre marginal så innehåll inte sitter mot kanten */
+}
+
+/* Begränsa bredd på huvudområden så allt håller ihop och blir centrerat */
+main, header, nav, footer {
+    width: min(1000px, 95%); /* maxbredd men responsiv på små skärmar */
+    max-width: 1000px; /* säkerhetsmax */
+}
+
+/* Gemensamt utseende för "kort" (header, main, footer) */
+header, main, footer {
+    background: var(--card-bg); /* vit kortbakgrund */
+    border-radius:10px; /* avrundade hörn */
+    box-shadow: 0 6px 18px rgba(11,111,214,0.08); /* lätt skugga för djup */
+    padding:1.1rem 1.2rem; /* inre padding */
+    margin-bottom:0.9rem; /* luft mellan korten */
+}
+
+
+header h1 {
+    margin:0; /* ta bort default-marginal */
+    color: var(--accent-dark); /* använda mörk accent för titeln */
+    font-size:clamp(1.3rem, 2.4vw, 2rem); /* responsiv storlek mellan gränser */
+}
+
+/* Navigationsstyling - placera menyknappar centrerade */
+nav {
+    margin: 0.2rem 0 0.8rem 0; /* liten topp- och bottenmarginal */
+}
+nav ul {
+    list-style:none; /* ta bort punkter */
+    padding:0; /* ingen inre padding */
+    margin:0; /* ingen yttre margin */
+    display:flex; /* radlayout för länkar */
+    gap:0.6rem; /* mellanrum mellan länkar */
+    justify-content:center; /* centrera listan */
+    flex-wrap:wrap; /* radbryt vid små skärmar */
+}
+nav a{
+    display:inline-block; /* gör länkar som knappar */
+    padding:0.5rem 0.9rem; /* knapp-padding */
+    background: var(--accent); /* knappfärg */
+    color:#fff; /* vit text på knappar */
+    text-decoration:none; /* ingen understrykning */
+    border-radius:8px; /* rundade knapphörn */
+    transition:background .15s ease, transform .12s ease; /* smidig hover-effekt */
+    font-weight:600; /* lite fetare text */
+}
+nav a:hover, nav a:focus{
+    background: var(--accent-dark); /* mörkare färg vid hover/fokus */
+    transform: translateY(-2px); /* liten uppflytt för effekt */
+}
+
+/* Sektioner i main får eget subtilt kortutseende */
+main section {
+    margin:0.8rem 0; /* utrymme mellan sektioner */
+    padding:0.6rem; /* inre padding */
+    border-radius:8px; /* avrundade hörn */
+    /* ljus gradient för att skilja sektioner från bakgrunden */
+    background: linear-gradient(180deg, rgba(240,246,255,0.6), rgba(255,255,255,0.4));
+}
+
+/* Begränsa textbredd för bättre läsbarhet och sätt färg/linjehöjd */
+main p, main li {
+    max-width: 68ch; /* läsbar radlängd i tecken */
+    margin: 0.5rem auto; /* centrerad med vertikalt mellanrum */
+    color: var(--muted); /* dämpad textfärg för brödtext */
+    line-height:1.6; /* god radavstånd för läsbarhet */
+}
+
+/* Footer-styling (lätt och diskret) */
+footer {
+    font-size:0.9rem; /* något mindre text */
+    color:var(--muted); /* dämpad färg */
+    background:transparent; /* transparent så kortets bakgrund syns */
+    box-shadow:none; /* ingen skugga i footer */
+    padding-top:0.2rem; /* lite utrymme upptill */
+}
+
+/* Responsiva justeringar för mycket små skärmar */
+@media (max-width:480px){
+    header, main, footer { padding:0.8rem; border-radius:8px; } /* mindre padding */
+    nav a { padding:0.45rem 0.7rem; font-size:0.95rem; } /* anpassa knappstorlek */
+}
