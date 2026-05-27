@@ -152,7 +152,26 @@
           </ol>
           <button type="button" id="checkanalytisk">Kontrollera svar</button>
         </form>
-        <p id="resultanalytisk" aria-live="polite"></p>
+
+        <!-- Ny ruta där användaren kan ställa en övningsfråga om ämnet -->
+        <section aria-labelledby="ovningsrubrik" class="ovning">
+          <h3 id="ovningsrubrik">Ställ en fråga om ämnet</h3>
+          <form id="ovningsformular">
+            <label for="ovningsfalt"
+              >Skriv din fråga eller ett område du vill öva mer på:</label
+            >
+            <textarea
+              id="ovningsfalt"
+              name="ovningsfalt"
+              rows="3"
+              placeholder="Ex. Hur fungerar kromatografi?"
+            ></textarea>
+            <div>
+              <button type="submit">Skicka fråga</button>
+            </div>
+          </form>
+          <p id="ovningsresultat" aria-live="polite"></p>
+        </section>
       </section>
     </main>
 

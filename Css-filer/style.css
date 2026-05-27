@@ -34,10 +34,24 @@ body{
     padding:2rem; /* inre marginal så innehåll inte sitter mot kanten */
 }
 
-/* Begränsa bredd på huvudområden så allt håller ihop och blir centrerat */
-main, header, nav, footer {
-    width: min(1000px, 95%); /* maxbredd men responsiv på små skärmar */
-    max-width: 1000px; /* säkerhetsmax */
+/* Grundlayout */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.45;
+  color: #222;
+  margin: 0;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+/* Begränsa bredd för bättre läsning */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(12, 20, 30, 0.06);
 }
 
 /* Gemensamt utseende för "kort" (header, main, footer) */
@@ -108,6 +122,85 @@ footer {
     background:transparent; /* transparent så kortets bakgrund syns */
     box-shadow:none; /* ingen skugga i footer */
     padding-top:0.2rem; /* lite utrymme upptill */
+}
+
+/* Övningsruta / textarea styling */
+.ovning {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  background: #f7fbff;
+  border: 1px solid #e3efff;
+  border-radius: 8px;
+}
+
+.ovning h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.ovning form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ovning label {
+  font-size: 0.95rem;
+}
+
+/* Textarea */
+#ovningsfalt {
+  width: 100%;
+  min-height: 90px;
+  padding: 0.6rem;
+  border: 1px solid #cfdbe8;
+  border-radius: 6px;
+  background: #fff;
+  resize: vertical;
+  font: inherit;
+  box-shadow: inset 0 1px 2px rgba(10, 20, 30, 0.03);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+#ovningsfalt:focus {
+  outline: none;
+  border-color: #5b9def;
+  box-shadow: 0 0 0 3px rgba(91, 157, 239, 0.12);
+}
+
+/* Knappar */
+.ovning button,
+button[type="button"] {
+  align-self: start;
+  padding: 0.45rem 0.8rem;
+  background: #0b74d1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(11, 116, 209, 0.12);
+}
+
+.ovning button:hover,
+button[type="button"]:hover {
+  background: #095fae;
+}
+
+/* Resulttext */
+#ovningsresultat {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #1b4b00; /* default green-ish for success messages */
+}
+
+/* Förbättra quiz-labeler så färgmarkering syns snyggt */
+form#quiz label {
+  display: inline-block;
+  padding: 0.18rem 0.45rem;
+  border-radius: 5px;
+  margin: 0.15rem 0;
+  transition: background-color 0.12s, color 0.12s;
 }
 
 /* Responsiva justeringar för mycket små skärmar */

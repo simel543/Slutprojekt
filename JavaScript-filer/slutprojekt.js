@@ -16,14 +16,12 @@
     inputs.forEach((input) => {
       const label = input.closest("label") || input.parentElement;
       if (!label) return;
-      // Mark correct option green
       if (input.value === correctValue) {
-        label.style.backgroundColor = "#c8e6c9"; // ljusgrön
+        label.style.backgroundColor = "#c8e6c9";
         label.style.color = "#000";
       } else {
-        // Reset non-correct to neutral; if it is selected and wrong, mark red
         if (input.checked && input.value !== correctValue) {
-          label.style.backgroundColor = "#ffcdd2"; // ljusröd
+          label.style.backgroundColor = "#ffcdd2";
           label.style.color = "#000";
         } else {
           label.style.backgroundColor = "";
@@ -37,7 +35,6 @@
     const btn = document.getElementById(buttonId);
     if (!btn) return;
     btn.addEventListener("click", function () {
-      // Clear previous styles for all questions in this quiz
       for (const q in answers) {
         clearStyles(q);
       }
@@ -46,7 +43,6 @@
       for (const q in answers) {
         const input = document.querySelector('input[name="' + q + '"]:checked');
         if (input && input.value === answers[q]) score++;
-        // Mark each question after checking
         markQuestion(q, answers[q]);
       }
       const resultEl = document.getElementById(resultId);
@@ -62,4 +58,32 @@
   setupQuiz("checkkaraktär", { q1: "b", q2: "a", q3: "b" }, "resultkaraktär");
   setupQuiz("checkstruktur", { q1: "b", q2: "b", q3: "b" }, "resultstruktur");
   setupQuiz("checkstoto", { q1: "b", q2: "c", q3: "a" }, "resultstoto");
+
+  // Hjälpfunktion för sanering av text
+  function rensaText(text) {
+    return String(text).replace(/</g, "").replace(/>/g, "").trim();
+  }
+
+  // Hantera övningsformulär (om det finns i HTML)
+  const ovningsformular = document.getElementById("ovningsformular");
+  const ovningsfalt = document.getElementById("ovningsfalt");
+  const ovningsresultat = document.getElementById("ovningsresultat");
+
+  if (ovningsformular) {
+    ovningsformular.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const sakerText = rensaText(ovningsfalt ? ovningsfalt.value : "");
+
+      if (sakerText === "") {
+        if (ovningsresultat)
+          ovningsresultat.textContent =
+            "Skriv ett område som du vill öva mer på.";
+        return;
+      }
+
+      if (ovningsresultat)
+        ovningsresultat.textContent = `Du vill öva mer på: ${sakerText}`;
+      if (ovningsfalt) ovningsfalt.value = "";
+    });
+  }
 })();
