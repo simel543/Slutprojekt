@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kemiska karaktärer</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">← Till startsidan</a>
+    </nav>
+    <header><h1>Kemiska karaktärer</h1></header>
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li><strong>Aciditet/basiskhet (pH)</strong></li>
+          <li><strong>Oxidation</strong> och <strong>reduktion</strong></li>
+          <li><strong>Polär</strong> vs <strong>opoler</strong></li>
+          <li><strong>Reaktivitet</strong> — hur lätt ämnet reagerar</li>
+          <li>
+            <strong>Löslighet</strong> — i vatten eller organiska lösningsmedel
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Kemiska karaktärer</h2>
+        <p>
+          Kemiska karaktärer beskriver ämnens egenskaper som påverkar hur de
+          beter sig i reaktioner och i olika miljöer. pH, polaritet, löslighet
+          och redoxegenskaper styr bland annat blandbarhet och reaktionsvägar.
+        </p>
+        <p>
+          Genom att förstå dessa karaktärer kan kemister förutsäga hur ämnen
+          reagerar under olika förhållanden och designa nya material med
+          specifika egenskaper.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vad visar pH-värdet?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" /> Löslighet</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" /> Surhet eller
+                  basicitet</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" /> Molekylvikt</label
+                >
+              </div>
+            </li>
+            <li>
+              Vad betyder att en molekyl är polär?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" />
+                  Elektronfördelningen är ojämn</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="b" /> Den är olöslig i
+                  vatten</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="c" /> Den har inga
+                  elektroner</label
+                >
+              </div>
+            </li>
+            <li>
+              Oxidation innebär:
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Vinst av
+                  elektroner</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" /> Förlust av
+                  elektroner</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" /> Ingen
+                  förändring</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkkaraktär">Kontrollera svar</button>
+        </form>
+        <p id="resultkaraktär" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>

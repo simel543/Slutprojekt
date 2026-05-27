@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kemiska reaktioner</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">← Till startsidan</a>
+    </nav>
+    <header><h1>Kemiska reaktioner</h1></header>
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li><strong>Reaktanter</strong> och <strong>produkter</strong></li>
+          <li><strong>Reaktionshastighet</strong></li>
+          <li><strong>Jämvikt</strong> — framåt och bakåtreaktioner</li>
+          <li><strong>Exoterm</strong> vs <strong>endoterm</strong></li>
+          <li><strong>Katalysator</strong> — påskyndar utan att förbrukas</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Kemiska reaktioner</h2>
+        <p>
+          Kemiska reaktioner innebär omvandlingar där bindningar bryts och
+          bildas. Hastighet och riktning påverkas av temperatur, koncentration,
+          tryck och katalysatorer. Jämviktsprincipen beskriver balansen mellan
+          reaktanter och produkter.
+        </p>
+        <p>
+          Exoterma reaktioner frigör energi, medan endoterma kräver energi.
+          Katalysatorer sänker aktiveringsenergin och ökar reaktionshastigheten
+          utan att själva förbrukas.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vad är en katalysator?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" /> Ett ämne som
+                  förbrukas</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" /> Ett ämne som
+                  påskyndar reaktionen utan att förbrukas</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" /> Ett
+                  reaktant</label
+                >
+              </div>
+            </li>
+            <li>
+              Vad händer i en exoterm reaktion?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" /> Energi tas
+                  upp</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="b" /> Ingen
+                  energiändring</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="c" /> Energi
+                  frigörs</label
+                >
+              </div>
+            </li>
+            <li>
+              Jämviktsläget påverkas av:
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Temperatur</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" />
+                  Koncentration</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" /> Både a och
+                  b</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkreaktion">Kontrollera svar</button>
+        </form>
+        <p id="resultreaktion" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>

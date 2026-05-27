@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Materiallära</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">← Till startsidan</a>
+    </nav>
+    <header><h1>Materiallära</h1></header>
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li>
+            <strong>Kristallin</strong> vs <strong>amorfi</strong> struktur
+          </li>
+          <li>
+            <strong>Hårdhet</strong>, <strong>styrka</strong> och
+            <strong>elasticitet</strong>
+          </li>
+          <li><strong>Korrosion</strong> och <strong>ytbehandling</strong></li>
+          <li><strong>Komposit</strong> — kombination av material</li>
+          <li><strong>Termiska och elektriska egenskaper</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Materiallära</h2>
+        <p>
+          Materiallära studerar sambandet mellan struktur, tillverkning och
+          materialegenskaper. Val av material styrs av mekaniska, kemiska och
+          termiska krav för en viss tillämpning.
+        </p>
+        <p>
+          Kristallina material har ordnad atomstruktur, medan amorfa material
+          saknar långväga ordning. Hårdhet mäter motstånd mot deformation,
+          styrka beskriver maximal belastning, och elasticitet är förmågan att
+          återgå till ursprunglig form. Korrosion är nedbrytning av material
+          genom kemiska reaktioner, och ytbehandling kan förbättra
+          korrosionsbeständighet. Kompositer kombinerar olika material för att
+          uppnå önskade egenskaper. Termiska och elektriska egenskaper är
+          avgörande för många tekniska tillämpningar.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vad är skillnaden mellan kristallin och amorf struktur?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" /> Kristallin har
+                  ordnad struktur</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" /> Amorf har ordnad
+                  struktur</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" /> Ingen
+                  skillnad</label
+                >
+              </div>
+            </li>
+            <li>
+              Vad beskriver materialets hårdhet?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" /> Motstånd mot
+                  repning eller indentation</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="b" /> Elasticitet</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="c" />
+                  Ledningsförmåga</label
+                >
+              </div>
+            </li>
+            <li>
+              Ett kompositmaterial är:
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Ett rent
+                  grundämne</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" /> Kombination av två
+                  eller flera material för förbättrade egenskaper</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" /> Alltid
+                  keramiskt</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkmaterial">Kontrollera svar</button>
+        </form>
+        <p id="resultmaterial" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>

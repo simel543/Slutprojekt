@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kemiska bindningar</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">← Till startsidan</a>
+    </nav>
+    <header><h1>Kemiska bindningar</h1></header>
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li>
+            <strong>Jonbindning</strong> — elektrostatisk attraktion mellan
+            joner
+          </li>
+          <li><strong>Kovalent bindning</strong> — delning av elektronpar</li>
+          <li>
+            <strong>Metallbindning</strong> — delokaliserade elektroner i
+            metaller
+          </li>
+          <li><strong>Polär kovalent</strong> — ojämn elektronfördelning</li>
+          <li><strong>Dipol</strong> — molekyl med två poler</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Kemiska bindningar</h2>
+        <p>
+          Bindningar bestämmer molekylers form och egenskaper. Joniska ämnen
+          bildar kristaller, kovalenta föreningar kan vara molekylära eller
+          nätverksstrukturer, och metallbindningar ger ledningsförmåga och
+          duktilitet.
+        </p>
+        <p>
+          Polära kovalenta bindningar skapar dipoler som påverkar
+          intermolekylära krafter och därmed ämnens smält- och kokpunkter,
+          löslighet och reaktivitet.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vilken bindning innebär delning av elektronpar?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" /> Jonbindning</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" /> Kovalent
+                  bindning</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" />
+                  Metallbindning</label
+                >
+              </div>
+            </li>
+            <li>
+              Vad kännetecknar joniska föreningar?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" /> Ledande i fast
+                  form</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="b" /> Hög smältpunkt och
+                  leder i smält eller lösning</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="c" /> Alltid
+                  gasform</label
+                >
+              </div>
+            </li>
+            <li>
+              En polär kovalent bindning har:
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Jämn
+                  elektronfördelning</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" /> Ojämlik
+                  elektronfördelning</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" /> Ingen
+                  bindning</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkbindning">Kontrollera svar</button>
+        </form>
+        <p id="resultbindning" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>

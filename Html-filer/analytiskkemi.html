@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytisk kemi</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">← Till startsidan</a>
+      </nav>
+      <h1>Analytisk kemi</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li>
+            <strong>Kvalitativ analys</strong> — identifiera vilka ämnen som
+            finns i ett prov (t.ex. påvisning av joner eller organiska
+            funktionella grupper).
+          </li>
+          <li>
+            <strong>Kvantitativ analys</strong> — bestämma mängden av ett ämne
+            med numeriska metoder (t.ex. koncentration i mg/L eller mol/L).
+          </li>
+          <li>
+            <strong>Provberedning</strong> — förbehandling som kan inkludera
+            homogenisering, extraktion, filtrering, spädning eller nedbrytning
+            för att få provet mätbart.
+          </li>
+          <li>
+            <strong>Separation</strong> — tekniker som kromatografi eller
+            elektrofores används för att dela upp komplexa blandningar innan
+            detektion.
+          </li>
+          <li>
+            <strong>Detektion</strong> — instrumentella metoder (spektrometri,
+            massespektrometri, elektrokemi) som omvandlar en kemisk egenskap
+            till en mätbar signal.
+          </li>
+          <li>
+            <strong>Kalibrering</strong> — upprätta samband mellan signal och
+            koncentration med standardserier; viktig för noggrannhet och
+            spårbarhet.
+          </li>
+          <li>
+            <strong>Noggrannhet</strong> och <strong>precision</strong> —
+            noggrannhet är hur nära ett mått är det sanna värdet; precision är
+            upprepbarheten mellan mätningar.
+          </li>
+          <li>
+            <strong>Detektionsgräns</strong> — lägsta mängd som kan urskiljas
+            från bakgrund; styr val av metod för spåranalyser.
+          </li>
+          <li>
+            <strong>Validering</strong> och kvalitetskontroll — verifiera att en
+            metod ger tillförlitliga resultat (specificitet, linjäritet,
+            känslighet, robusthet).
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fördjupning</h2>
+        <p>
+          I praktiken kombineras flera steg: ett miljöprov kan först extraheras
+          för att frigöra analyter, separeras med vätskekromatografi och sedan
+          detekteras med massespektrometri för både identifiering och
+          kvantifiering. Val av metod styrs av provmatrix, önskad känslighet och
+          vilka interferenser som finns. Kvalitetskontroll inkluderar blanks,
+          referensmaterial och återfinnandetester.
+        </p>
+        <p>
+          Vanliga instrument och metoder: spektrofotometri (mätning av
+          ljusabsorption), atomabsorptionsspektrometri (metaller),
+          gaskromatografi–masspektrometri (flyktiga organiska ämnen) och HPLC
+          (icke-flyktiga organiska analyter).
+        </p>
+      </section>
+
+      <section>
+        <h2>Användningsexempel</h2>
+        <p>
+          - Miljöövervakning: bestämma spårmetaller i vatten.<br />
+          - Läkemedelsanalys: kontroll av renhet och koncentration av aktiva
+          substanser.<br />
+          - Livsmedel: upptäckt av föroreningar och konserveringsmedel.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vilken teknik används främst för separation?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" />
+                  Spektrometri</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" />
+                  Kromatografi</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" /> Kalibrering</label
+                >
+              </div>
+            </li>
+            <li>
+              Vad mäter kvantitativ analys?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" /> Identitet</label
+                >
+              </div>
+              <div>
+                <label><input type="radio" name="q2" value="b" /> Mängd</label>
+              </div>
+              <div>
+                <label><input type="radio" name="q2" value="c" /> pH</label>
+              </div>
+            </li>
+            <li>
+              Vilken term beskriver minsta mängd som kan detekteras?
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Precision</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" /> Noggrannhet</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" />
+                  Detektionsgräns</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkanalytisk">Kontrollera svar</button>
+        </form>
+        <p id="resultanalytisk" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="../index.html">Till startsidan</a></p>
+    </footer>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stökiometri</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">← Till startsidan</a>
+    </nav>
+    <header><h1>Stökiometri</h1></header>
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li><strong>Mol</strong> — substansmängd (6.022×10^23 enheter)</li>
+          <li><strong>Molmassa</strong> — massa per mol (g/mol)</li>
+          <li>
+            <strong>Reaktionskoefficienter</strong> — antal enheter i
+            balanserade formler
+          </li>
+          <li>
+            <strong>Begränsande reaktant</strong> — den som tar slut först
+          </li>
+          <li>
+            <strong>Teoretiskt utbyte</strong> och
+            <strong>procentutbyte</strong>
+          </li>
+          <li><strong>Molaritet</strong> — koncentration i mol/L</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Stökiometri</h2>
+        <p>
+          Stökiometri handlar om kvantitativa relationer i kemiska reaktioner.
+          Genom att balansera reaktionsformler och använda molbegreppet kan du
+          räkna om mellan massa, substansmängd och volym av lösningar samt
+          bestämma vilken reaktant som begränsar reaktionen och vilket utbyte
+          som är möjligt.
+        </p>
+        <p>
+          Stökiometri används för att förutsäga mängder av reaktanter och
+          produkter i kemiska reaktioner. Genom att använda balanserade kemiska
+          ekvationer kan man beräkna hur mycket av varje ämne som behövs eller
+          bildas.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vad är ett mol?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" /> Massenhet
+                  (kg)</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" /> Substansmängd,
+                  6.022×10^23 enheter</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" /> Volymenhet
+                  (L)</label
+                >
+              </div>
+            </li>
+            <li>
+              Vilken reaktant bestämmer det maximala utbytet?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" /> Den med högst
+                  molmassa</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="b" /> Den i högst
+                  mängd</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="c" /> Begränsande
+                  reaktant</label
+                >
+              </div>
+            </li>
+            <li>
+              Hur räknar du massan av ett ämne från mol?
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Mol ×
+                  molmassa</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" /> Mol ÷
+                  molmassa</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" /> Mol +
+                  molmassa</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkstoto">Kontrollera svar</button>
+        </form>
+        <p id="resultstoto" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>

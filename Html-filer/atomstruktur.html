@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atomstruktur</title>
+    <link rel="stylesheet" href="../Css-filer/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">← Till startsidan</a>
+    </nav>
+    <header><h1>Atomstruktur</h1></header>
+    <main>
+      <section>
+        <h2>Begrepp</h2>
+        <ul>
+          <li><strong>Atom</strong> — minsta enhet av ett grundämne</li>
+          <li><strong>Elektronskal</strong> — nivåer där elektroner finns</li>
+          <li>
+            <strong>Proton</strong> och <strong>neutron</strong> — i atomkärnan
+          </li>
+          <li><strong>Atomnummer</strong> — antal protoner</li>
+          <li><strong>Masstal</strong> — protoner + neutroner</li>
+          <li><strong>Isotoper</strong> — atomer med olika antal neutroner</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Atomstruktur</h2>
+        <p>
+          Atomstrukturen beskriver hur materia byggs upp av atomer med en tät
+          kärna av protoner och neutroner, omsluten av elektroner i diskreta
+          skal. Elektronernas ordning bestämmer kemiska egenskaper och
+          bindningsbeteende.
+        </p>
+        <p>
+          Atomnumret anger antalet protoner och därmed grundämnet, medan
+          masstalet inkluderar både protoner och neutroner. Isotoper är
+          varianter av samma grundämne med olika neutronantal, vilket påverkar
+          stabilitet och radioaktivitet.
+        </p>
+      </section>
+
+      <section>
+        <h2>Litet frågespel</h2>
+        <form id="quiz">
+          <ol>
+            <li>
+              Vad anger atomnumret?
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="a" /> Antal
+                  neutroner</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="b" /> Antal
+                  protoner</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q1" value="c" /> Masstalet</label
+                >
+              </div>
+            </li>
+            <li>
+              Var finns elektronerna i en atom?
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="a" /> I kärnan</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="b" /> I
+                  elektronskal</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q2" value="c" /> I molekyler</label
+                >
+              </div>
+            </li>
+            <li>
+              Vad är en isotop?
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="a" /> Atom med extra
+                  proton</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="b" /> Atom med samma
+                  protonantal men olika neutronantal</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="radio" name="q3" value="c" /> Atom utan
+                  elektroner</label
+                >
+              </div>
+            </li>
+          </ol>
+          <button type="button" id="checkstruktur">Kontrollera svar</button>
+        </form>
+        <p id="resultstruktur" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="../JavaScript-filer/slutprojekt.js"></script>
+  </body>
+</html>
